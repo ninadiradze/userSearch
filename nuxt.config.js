@@ -22,6 +22,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/axios' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -35,7 +36,25 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios'
+    // '@nuxtjs/eslint-module'
   ],
+  /*
+ ** Axios module configuration
+ ** See https://axios.nuxtjs.org/options
+ */
+  axios: {
+    baseURL: process.env.API_URL,
+    proxy: true
+  },
+  proxy: {
+    '/api/': {
+      target: process.env.API_URL,
+      pathRewrite: {
+        '^/api/': ''
+      }
+    }
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
