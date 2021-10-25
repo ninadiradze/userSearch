@@ -1,0 +1,205 @@
+//backgrounds
+$bg-sizes: (
+  'cover': cover,
+  'contain': contain
+);
+
+@each $name, $bg-size in $bg-sizes {
+  .bg-#{$name} {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: $bg-size;
+  }
+}
+
+//bg and font colors
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+
+  .bg-hover-#{$name} {
+    background-color: $color;
+  }
+
+  .f-color-#{$name} {
+    color: $color;
+  }
+
+  .f-hover-color-#{$name} {
+    color: $color !important;
+  }
+
+  .svg-fill-#{$name} {
+    fill: $color;
+  }
+
+  .svg-stroke-#{$name} {
+    stroke: $color;
+  }
+}
+
+//borders
+$borderRadiuses: (
+  'xxs': 2px,
+  'xs': 4px,
+  's': 6px,
+  'm': 8px,
+  'l': 10px,
+  'xl': 14px,
+  'xxl': 18px,
+  '50': 50%,
+  'center': center
+);
+
+@each $name, $borderRadius in $borderRadiuses {
+  .border-radius-#{$name} {
+    border-radius: $borderRadius;
+  }
+}
+
+.border-solid-light {
+  border: 1px solid $light-periwinkle;
+}
+
+//.border-color-#{$name} {
+//  border-color: $color;
+//}
+
+//positions
+$positions: (
+  'absolute': absolute,
+  'relative': relative,
+  'sticky': sticky,
+  'fixed': fixed
+);
+
+@each $name, $position in $positions {
+  .p-#{$name} {
+    position: $position;
+  }
+}
+
+$elements: 10;
+@for $i from 0 to $elements {
+  .mt-#{$i + 1} {
+    margin-top: #{$i + 1}rem;
+  }
+}
+
+$elements: 10;
+@for $i from 0 to $elements {
+  .mb-#{$i + 1} {
+    margin-bottom: #{$i + 1}rem;
+  }
+}
+
+$elements: 10;
+@for $i from 0 to $elements {
+  .ml-#{$i + 1} {
+    margin-left: #{$i + 1}rem;
+  }
+}
+
+$elements: 10;
+@for $i from 0 to $elements {
+  .mr-#{$i + 1} {
+    margin-right: #{$i + 1}rem;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 0 8px 0 rgba(118, 118, 118, 0.1);
+}
+
+.w-auto {
+  width: auto;
+}
+
+.wh-100 {
+  width: 100%;
+  height: 100%;
+}
+
+@for $i from 0 through 100 {
+  .w-#{$i} {
+    width : round(percentage($i/100));
+  }
+}
+
+
+@each $name, $f-family in $font-families {
+  .f-#{$name} {
+    font-family: $f-family;
+  }
+}
+
+$elements: 50;
+@for $i from 10 to $elements {
+  .f-size-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+
+//Text
+$t-aligns: (
+  'left': left,
+  'center': center,
+  'right': right
+);
+
+//text-transform: lowercase
+$text-transforms: (
+  'uppercase': uppercase,
+  'lowercase': lowercase,
+  'capitalize': capitalize
+);
+@each $name, $text-transform in $text-transforms {
+  .t-transform-#{$name} {
+    text-transform: $text-transform;
+  }
+}
+.t-transorm-lowercase {
+
+}
+
+@each $name, $t-align in $t-aligns {
+  .t-align-#{$name} {
+    text-align: $t-align;
+  }
+}
+
+@each $prop in (contain, cover) {
+  .object-fit\:#{$prop} {
+    object-fit: $prop;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+$radiusSize: 1px;
+
+@for $i from 1 through 3 {
+  .rounded-#{$i} {
+    border-radius: $i * $radiusSize;
+  }
+}
+
+@each $level in (0, 50) {
+  .opacity-#{$level} {
+    opacity: $level / 100;
+  }
+}
+
+
+
+

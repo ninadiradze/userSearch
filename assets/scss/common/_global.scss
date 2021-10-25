@@ -1,0 +1,56 @@
+html {
+  font-size: 16px;
+
+  @media #{$desktop-l} {
+    font-size: 15px;
+  }
+  @media #{$desktop-m} {
+    font-size: 14px;
+  }
+  @media #{$desktop-s} {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: map-get($font-families, 'regular');
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: map-get($colors, 'dark');
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+

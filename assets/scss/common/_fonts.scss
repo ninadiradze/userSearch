@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'FiraGO-bold';
+  src: url('~assets/fonts/FiraGO-Bold.woff2') format('woff2'),
+  url('~assets/fonts/FiraGO-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraGO-medium';
+  src: url('~assets/fonts/FiraGO-Medium.woff2') format('woff2'),
+  url('~assets/fonts/FiraGO-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraGO-regular';
+  src: url('~assets/fonts/FiraGO-Regular.woff2') format('woff2'),
+  url('~assets/fonts/FiraGO-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

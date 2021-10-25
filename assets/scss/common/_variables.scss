@@ -1,0 +1,61 @@
+/*Colors*/
+$black: #000000;
+$white: #ffffff;
+$light-gray: #5a6679;
+$light-periwinkle: #dfe3e9;
+$slate: #5a6679;
+$slate-20: rgba($slate, 0.2);
+$slate-50: rgba($slate, 0.5);
+$persian-green: #32a398;
+$middle-blue-purple: #8164a7;
+$dark-cornflower-blue: #35437A;
+$palatinate-purple: #5D2254;
+$satin-sheen-gold: #CB9C2D;
+$apple-green: #90B202;
+$french-mauve: #C576C2;
+
+//Screen
+$desktop-l: 'screen and (max-width: 1800px)';
+$desktop-m: 'screen and (max-width: 1620px)';
+$desktop-s: 'screen and (max-width: 1450px)';
+$desktop-xs: 'screen and (max-width: 1300px)';
+$tablet: '(max-width: 1200px)';
+$tablet-mini: 'screen and (max-width: 968px)';
+$mobile-l: 'screen and (max-width: 768px)';
+$mobile-s: 'screen and (max-width: 576px)';
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1900px
+) !default;
+
+//Transitions
+$easing: ease;
+
+$colors: (
+  'black': #000,
+  'white': $white,
+  'light-gray': $light-gray,
+  'light-periwinkle': $light-periwinkle,
+  'slate-50': $slate-50,
+  'blue': $dark-cornflower-blue,
+  'persian-green': $persian-green,
+  'palatinate-purple': $palatinate-purple,
+  'satin-sheen-gold': $satin-sheen-gold,
+  'apple-green': $apple-green,
+  'french-mauve': $french-mauve
+);
+
+$font-families: (
+  'regular': FiraGO-regular,
+  'medium': FiraGO-medium,
+  'bold': FiraGO-bold,
+  'italic-bold': FiraGO-italic,
+  'glaho': bpg_glaho,
+);
+
+$displays: none, inline, inline-block, block, flex, inline-flex;
